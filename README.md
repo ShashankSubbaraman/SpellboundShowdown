@@ -48,10 +48,13 @@ MysticWand is an interactive gesture-controlled magic wand that brings fantasy s
 **Problem:** After assembling the wand, the battery and internal components would shift and rattle inside the handle during use. This created distracting noise, caused wires to strain and disconnect, and affected the wand's balance, making gesture recognition inconsistent.
 
 **Solution:** We redesigned the internal structure by 3d printing custom mounting brackets and compartments inside the handle. We created precisely-sized cavities that matched the exact dimensions of each component - the battery, ESP32, MPU-6050 sensor, and buck converter. These internal casing structures held each component securely in place and prevented any movement. We added friction-fit slots and snap-in features that allowed components to be inserted during assembly but held them firmly once installed. We also designed wire routing channels that kept cables organized and prevented them from getting pinched or pulled during movement. After printing the updated handle with integrated internal structure, we reassembled the wand and tested it - no more rattling, no more disconnections, and consistent balance throughout use.
-<img width="400" height="389" alt="image" src="https://github.com/user-attachments/assets/644fda42-218e-4c75-b8eb-9c831aad0fa0" />
+
 
 
 ### Challenge 5: Misprints 
+
+
+
 
 ### Challenge 6 cannot connect IMU to pi0 sugar
 
