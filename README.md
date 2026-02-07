@@ -23,9 +23,10 @@ MysticWand is an interactive gesture-controlled magic wand that brings fantasy s
 
 **Problem:** Initial wand designs were consistently too thick, making them heavy, awkward to hold, and visually disproportionate. The bulky design compromised the wand's usability and didn't have the sleek, elegant appearance we envisioned for a magical wand.
 
-**Solution:** We went through multiple redesign iterations to slim down the wand while maintaining structural integrity. We experimented with variable wall thickness - using thicker walls only at critical stress points like the grip and tip connection, while thinning other sections significantly. We hollowed out non-essential areas and tested different infill patterns to find the right balance between strength and weight reduction. We also refined the overall proportions, creating a gradual taper from handle to tip that felt more natural and balanced. After several prototype iterations, we achieved a noticeably slimmer profile that was much lighter and more comfortable to handle. The final design strikes the right balance - slim and elegant enough to look like a proper wand, yet strong enough to withstand regular use and the occasional accidental drop.
+**Solution:** We went through multiple redesign iterations to slim down the wand while maintaining structural integrity. We experimented with variable wall thickness - using thicker walls only at critical stress points like the grip and tip connection, while thinning other sections significantly. We hollowed out non-essential areas and tested different infill patterns to find the right balance between strength and weight reduction. We also refined the overall proportions, creating a gradual taper from handle to tip that felt more natural and balanced. After several prototype iterations, we achieved a noticeably slimmer profile that was much lighter and more comfortable to handle. 
 
 ---
+
 
 ### Challenge 2: Gesture Recognition Reliability
 
