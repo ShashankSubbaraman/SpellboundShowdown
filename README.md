@@ -13,8 +13,7 @@
 
 ## Project Purpose
 
-MysticWand is an interactive gesture-controlled magic wand that brings fantasy spellcasting into reality. Using a custom 3D-printed wand embedded with motion sensors, users can perform magical gestures to control smart home devices, trigger visual effects, and interact with digital environments in an immersive way.
-
+WandDuel involves two interactive magic wands with the goal of bringing magic-themed battles to life. With gesture recognition, users can wave their respective wands to cast a variety of spells and face off against each other. 
 
 
 ## Challenges & Solutions
@@ -44,6 +43,9 @@ MysticWand is an interactive gesture-controlled magic wand that brings fantasy s
 ---
 
 ### Challenge 4: Internal Component Movement and Rattling
+<p align ="center" >
+  <img src="https://github.com/user-attachments/assets/74168ab6-e8d6-485c-9b3d-cfe41942021d" />
+</p>
 
 **Problem:** After assembling the wand, the battery and internal components would shift and rattle inside the handle during use. This created distracting noise, caused wires to strain and disconnect, and affected the wand's balance, making gesture recognition inconsistent.
 
@@ -52,13 +54,15 @@ MysticWand is an interactive gesture-controlled magic wand that brings fantasy s
 
 
 ### Challenge 5: Misprints 
+<p align ="center" >
+  <img src="https://github.com/user-attachments/assets/1539ad0b-96ce-48f5-8b4c-d83931841b6f" />
+</p>
 
 
-
-
-### Challenge 6 cannot connect IMU to pi0 sugar
+### Challenge 6: cannot connect IMU to pi0 sugar
+**Problem**  we swapped the sd card on working pi and broken one gpi 2 and gpi 3 we removed and coced virtual pins coded to create  new itc address Dpiol pins we took the two that took the data transfer to do what we need 
 
 
 ## 📚 Credits & Acknowledgments
-
+ 
 ### APIs 
