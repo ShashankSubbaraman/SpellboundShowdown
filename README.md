@@ -20,12 +20,16 @@ WandDuel involves two interactive magic wands with the goal of bringing magic-th
 
 ### Challenge 1: 3D-Printed Wand Structure Issues
 
+
 **Problem:** Initial wand designs were consistently too thick, making them heavy, awkward to hold, and visually disproportionate. The bulky design compromised the wand's usability and didn't have the sleek, elegant appearance we envisioned for a magical wand.
 
-**Solution:** We went through multiple redesign iterations to slim down the wand while maintaining structural integrity. We experimented with variable wall thickness - using thicker walls only at critical stress points like the grip and tip connection, while thinning other sections significantly. We hollowed out non-essential areas and tested different infill patterns to find the right balance between strength and weight reduction. We also refined the overall proportions, creating a gradual taper from handle to tip that felt more natural and balanced. After several prototype iterations, we achieved a noticeably slimmer profile that was much lighter and more comfortable to handle. 
+**Solution:** We went through multiple redesign iterations to slim down the wand while maintaining structural integrity. We experimented with variable wall thickness - using thicker walls only at critical stress points like the grip and tip connection, while thinning other sections significantly. We hollowed out non-essential areas and tested different infill patterns to find the right balance between strength and weight reduction. We also refined the overall proportions, creating a gradual taper from handle to tip that felt more natural and balanced. After several prototype iterations, we achieved a noticeably slimmer profile that was much lighter and more comfortable to handle. This also led us to part of the solution for challenge 4.
+
+<p align ="center" >
+  <img src="https://github.com/user-attachments/assets/641f6100-afc0-4bc9-9512-943bfd81cb40" />
+</p>
 
 ---
-
 
 ### Challenge 2: Gesture Recognition Reliability
 
@@ -44,12 +48,15 @@ WandDuel involves two interactive magic wands with the goal of bringing magic-th
 
 ### Challenge 4: Internal Component Movement and Rattling
 <p align ="center" >
-  <img src="https://github.com/user-attachments/assets/74168ab6-e8d6-485c-9b3d-cfe41942021d" />
+  <img  src="https://github.com/user-attachments/assets/ac93e67a-df8a-4801-a1f8-97807a2acdc7" />
+</p>
+<p align ="center" >
+  <img src="https://github.com/user-attachments/assets/b2ce3e1c-e561-4d8a-b79e-f9b7b3bf81cb" />
 </p>
 
 **Problem:** After assembling the wand, the battery and internal components would shift and rattle inside the handle during use. This created distracting noise, caused wires to strain and disconnect, and affected the wand's balance, making gesture recognition inconsistent.
 
-**Solution:** We redesigned the internal structure by 3d printing custom mounting brackets and compartments inside the handle. We created precisely-sized cavities that matched the exact dimensions of each component - the battery, ESP32, MPU-6050 sensor, and buck converter. These internal casing structures held each component securely in place and prevented any movement. We added friction-fit slots and snap-in features that allowed components to be inserted during assembly but held them firmly once installed. We also designed wire routing channels that kept cables organized and prevented them from getting pinched or pulled during movement. After printing the updated handle with integrated internal structure, we reassembled the wand and tested it - no more rattling, no more disconnections, and consistent balance throughout use.
+**Solution:** We redesigned the internal structure by 3d printing custom mounting brackets and compartments inside the handle. We created precisely-sized cavities that matched the exact dimensions the battery and buck converter. These internal casing structures held each component securely in place and prevented any movement. We added friction-fit slots and snap-in features that allowed components to be inserted during assembly but held them firmly once installed. We also designed wire routing channels that kept cables organized and prevented them from getting pinched or pulled during movement. After printing the updated handle with integrated internal structure, we reassembled the wand and tested it - no more rattling, no more disconnections, and consistent balance throughout use.
 
 
 
@@ -58,10 +65,10 @@ WandDuel involves two interactive magic wands with the goal of bringing magic-th
   <img src="https://github.com/user-attachments/assets/1539ad0b-96ce-48f5-8b4c-d83931841b6f" />
 </p>
 
-
 ### Challenge 6: cannot connect IMU to pi0 sugar
-**Problem**  we swapped the sd card on working pi and broken one gpi 2 and gpi 3 we removed and coced virtual pins coded to create  new itc address Dpiol pins we took the two that took the data transfer to do what we need 
+**Problem** We encountered persistent difficulties connecting the IMU sensor to the raspberry pi zero when using the PiSugar power module. The sensor worked perfectly on a breadboard with direct Pi connection, but completely failed to communicate through the PiSugar's GPIO headers. We suspected that the PiSugar's circuitry was conflicting with the GPIO pins. Without the IMU, the wand had no ways of detecting any gestures. 
 
+**Solution** We first swapped the SD cars between our working Pi and the problematic one to fihure out weather the issue was hardware or software related. The end result confirmed that the Pi hardware itself was functional but the problem was the GPIO pin conflicting with the PiSugar. By implementing a workaround, we removed the physical connections from the GPIO 2 & GPIO 3, and replaced it with configured virtual 12C pins. We selected two available GPIO pins that weren't being used by PiSugar's internal circuitry, but could handle the data transfer requirements we needed. We then remapped the original pins to these new alternative pins, thus bypassing the PiSugar's GPIO problems. We then connected our IMU sensor to these new pins and modified our code to reference the new virtual pins. This ultimately resulted in the IMU being detected and being able to communicate reliably
 
 ## 📚 Credits & Acknowledgments
  
