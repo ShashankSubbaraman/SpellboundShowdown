@@ -110,6 +110,11 @@ nmcli connection up enterprise-wifi
 ```
 These commands created a WiFi profile, configured PEAP authentication with our school credentials, set up automatic IP assignment, and activated the connection. After replacing "username" and "password!" with our actual login, the Pi connected successfully.
 
+### Challenge 7: Time Constraints
+**Problem** While we envisioned having two working magical wands, both able to cast spells, given the time constraints, we were unfortunately unable to fully work out the Raspberry Pi Zero module and integrating it fully with Edge Impulse and gesture recognition.
+
+**Solution** While not ideal, we decided to compromise and further improve the model for the one wand that we had working. We collected more training data to refine the gesture detection to over 80%. Despite all the setbacks, we still believe that this wand by itself fulfills our vision of bringing magic to life.
+
 ## 📚 Credits & Acknowledgments
  
 ### APIs 
