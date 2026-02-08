@@ -25,6 +25,7 @@ Spellbound Showdown involves two interactive magic wands with the goal of bringi
 ### Firmware & Embedded Programming
 - Arduino IDE
 - Visual Studio Code
+- Ubantu
 
 ### Machine Learning
 - Edge Impulse
