@@ -116,7 +116,7 @@ These commands created a WiFi profile, configured PEAP authentication with our s
 -MPU6050 Library: Sensor interface and motion processing
 - PubSubClient: MQTT client for Arduino/ESP
 - paho-mqtt: MQTT client library for Python
-- smbus2 or smbus: I2C communication for MPU-6050 sensor
+- smbus: I2C communication for MPU-6050 sensor
 - RPi.GPIO: Raspberry Pi GPIO control
 - numpy: Numerical computing for sensor data processing
 
