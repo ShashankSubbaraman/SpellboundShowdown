@@ -14,7 +14,7 @@
 
 ## Purpose
 
-Spellbound Showdown involves two interactive magic wands with the goal of bringing magic-themed battles to life. With gesture recognition, users can wave their respective wands to cast a variety of spells and face off against each other. 
+Spellbound involves an interactive magic wands with the goal of bringing magic-themed battles to life. With gesture recognition, users can wave their respective wands to cast a variety of spells and face off against each other. 
 
 ## Tools Used
 ### Backend Development:
