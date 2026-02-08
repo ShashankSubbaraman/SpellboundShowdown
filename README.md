@@ -1,7 +1,7 @@
 
 <div align="center">
   
-# Spellbound Showdown- Gesture-Controlled Magic Wand 1v1 
+# Spellbound- Gesture-Controlled Magic Wand 1v1 
  </div>
  
 ## Team Members
@@ -14,7 +14,7 @@
 
 ## Purpose
 
-Spellbound involves an interactive magic wands with the goal of bringing magic-themed battles to life. With gesture recognition, users can wave their respective wands to cast a variety of spells and face off against each other. 
+Spellbound involves an interactive magic wands with the goal of bringing magic-themed battles to life. With gesture recognition, users can wave their respective wands to cast a variety of spells and generate images on a compatable LCD board. 
 
 ## Tools Used
 ### Backend Development:
